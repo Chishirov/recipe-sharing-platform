@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialLinks } from '../constants';
+import { socialLinks } from '../constants/index.js';
 import { Link } from 'react-router-dom';
 
 

@@ -24,7 +24,7 @@ function SinglePage({mealIdProp}) {
 	const [singleMeal, setSingleMeal] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
 	const [isHeartActive, setIsActiveHeart] = useState(false);
-	const url = "https://rezept-share-plattform.onrender.com";
+	const url = "http://localhost:3000";
 	useEffect(() => {
 		// mealId wird standardmäßig aus den Props geladen. Und wenn sie in den props nicht vorhanden ist, aus dem context
 		(async function fetchMealById() {
@@ -47,6 +47,7 @@ function SinglePage({mealIdProp}) {
 
 	const onClickHandler = async () => {
 		setIsActiveHeart(!isHeartActive);
+		
 		let newRecipeItem = singleMeal.meals?.map((meal) => ({
 			title: meal?.strMeal,
 			ingredients: meal?.strIngredient1,

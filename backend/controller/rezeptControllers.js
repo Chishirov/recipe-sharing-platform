@@ -14,7 +14,7 @@ export const createUser = async (req, res) => {
   const user = new UserSchema(userData);
   try {
     await user.save();
-    res.send("todolist gespeichert");
+    res.send("user gespeichert");
   } catch (error) {
     console.error(error);
   }
@@ -24,7 +24,7 @@ export const createRecipe = async (req, res) => {
   console.log("Hallo Welt", req.body);
   try {
     const recipeData = req.body;
-    const userId = "65956bcb1bb0197d3b42c6e5";
+    const userId = "65a66c5ddc5bf3e33f495cd6"; 
 
     const user = await UserSchema.findById(userId);
     if (!user) {

@@ -4,6 +4,7 @@ const rezeptRouter = Router()
 
 rezeptRouter.get("/", getAllRecipes );
 rezeptRouter.post("/", createRecipe);
+rezeptRouter.post("/createUser", createUser);
 rezeptRouter.put("/:userId/:recipeId", updateRecipe);
 rezeptRouter.delete ('/:userId/:recipeId', deleteRecipe);
 

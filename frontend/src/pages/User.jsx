@@ -6,7 +6,7 @@ import { UserContext } from "../context/UserContext";
 import UserRecipes from "../components/UserRecipes";
 
 
- const url = "http://localhost:3001";
+ const url = "http://localhost:3000";
 
 const ShareMenu = ({ onShareFacebook, onShareTwitter }) => {
   return (

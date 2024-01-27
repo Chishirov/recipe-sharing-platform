@@ -8,7 +8,7 @@ function UpperNav() {
 	useEffect(() => {
 		const fetchUserName = async () => {
 			const response = await fetch(
-				"https://rezept-share-plattform.onrender.com"
+				"http://localhost:3000"
 			);
 			const data = await response.json();
 			console.log(data[0]);

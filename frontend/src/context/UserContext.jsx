@@ -21,7 +21,7 @@ const UserContextProvider = ({ children }) => {
 	const [shareMenuVisible, setShareMenuVisible] = useState(false);
 	const [selectedRecipe, setSelectedRecipe] = useState(null);
 
-	const url = "https://rezept-share-plattform.onrender.com";
+	const url = "http://localhost:3000";
 
 	const fetchUserData = async () => {
 		try {
